@@ -2,7 +2,7 @@
   "name": "discord-bot",
   "version": "0.0.1",
   "description": "A Discord bot to provision Google Compute Engine VM Instances",
-  "main": "src/gateway.js",
+  "main": "cloud-functions.js",
   "author": "Jason D'Amour",
   "license": "MIT",
   "private": true,

@@ -69,7 +69,7 @@ https://discord.com/oauth2/authorize?client_id=[CLIENT_ID]&scope=[SCOPE]
 
 3. Press `Next`. On the `Source` page, you'll need to copy the source code files. I recommend just using the file editor. Delete all the default files, and create the following, copying the contents. Your tree should look like:
 ```bash
-C:.
+.
 │   cloud-functions.js
 │   package.json
 └───commands

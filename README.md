@@ -114,13 +114,15 @@ This Application requires the following variables at runtime:
 
   | Name                        | Value                                                                                                           |
   |-----------------------------|-----------------------------------------------------------------------------------------------------------------|
-  | DISCORD_APPLICATION_ID      | The Application ID from the Discord developer portal (AKA Client ID)                                            |
-  | DISCORD_PUBLIC_KEY          | The Public Key from the Discord developer portal                                                                |
-  | DISCORD_TOKEN               | The Client Secret from the Discord developer portal                                                             |
-  | DISCORD_GUILD_ID            | [optional, but strongly recommended] The ID of the discord server to register commands. 1 hour delay if not set |
-  | GCLOUD_PROJECT              | The GCP Project ID                                                                                              |
-  | DEFAULT_COMPUTE_ZONE        | [optional] The default zone to use for Compute Engine                                                           |
-  | USER_ROLE_ID                | The Role ID of low-permission users who can list, start, and stop instances                                     |
-  | MANAGER_ROLE_ID             | The Role ID of high-permission users who can directly run RCON commands                                         |
+  | DISCORD_APPLICATION_ID      | 964746709265686538                                                                                              |
+  | DISCORD_PUBLIC_KEY          | 52df349177f63d38f5a39d0fb7e9e781a5ac2ae24b012a90449f6080e725eee7                                                |
+  | DISCORD_TOKEN               | Get from https://discord.com/developers/applications/964746709265686538/oauth2/general                          |
+  | DISCORD_GUILD_ID            | 848420654445232158                                                                                              |
+  | GCLOUD_PROJECT              | valheim-808                                                                                                     |
+  | DEFAULT_COMPUTE_ZONE        | us-central1-a                                                                                                   |
+  | USER_ROLE_ID                | 964750163530874900                                                                                              |
+  | MANAGER_ROLE_ID             | 893652161718812744                                                                                              |
+  
+
 
 > If you face any problems, feel free to create an Issue from the Issues tab. I will try to respond as early as possible.

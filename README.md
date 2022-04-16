@@ -75,13 +75,10 @@ C:.
 └───commands
         servers.js
 ```
-
-  - package.json (edit the `main` property to be `cloud-functions.js`)
-  - cloud-functions.js
-  - commands/servers.js
-4. Press Deploy! Wait for the function to go green (hopefully :) ) and then copy the Trigger URL. At this point, if you go to your discord server and type a `/`, you should see the autocomplete prompt for your commands appear. If you did not pass the ID of the Guild (Discord Server), then there is a 1 hour delay in updating commands.
-5. Go back to the Discord developer portal and paste the Trigger URL in the `INTERACTIONS ENDPOINT URL` field. If the Function started correctly, then discord will accept the URL when you save.
-6. Test your commands!
+4. Set the `Entry point` to "interactions"
+5. Press Deploy! Wait for the function to go green (hopefully :) ) and then copy the Trigger URL. At this point, if you go to your discord server and type a `/`, you should see the autocomplete prompt for your commands appear. If you did not pass the ID of the Guild (Discord Server), then there is a 1 hour delay in updating commands.
+6. Go back to the Discord developer portal and paste the Trigger URL in the `INTERACTIONS ENDPOINT URL` field. If the Function started correctly, then discord will accept the URL when you save.
+7. Test your commands!
 
 ## Google Cloud Run
 1. Ensure you have enabled [Google Container Registry](https://console.cloud.google.com/gcr) for your project, and you have [gcloud installed](https://cloud.google.com/sdk/docs/install). Make sure you have [Docker installed](https://docs.docker.com/get-docker/) and its started.

@@ -54,7 +54,8 @@ https://discord.com/oauth2/authorize?client_id=[CLIENT_ID]&scope=[SCOPE]
 
 ## Google Cloud Functions
 1. Go to the [Google Cloud Functions console](https://console.cloud.google.com/functions). Make sure the API is enabled, then click the `Create Function` button.
-2. Fill out the first page
+2. Use a 2nd gen function
+3. Fill out the first page
 
   | Field                       | Value                                                                                                         |
   |-----------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -66,7 +67,15 @@ https://discord.com/oauth2/authorize?client_id=[CLIENT_ID]&scope=[SCOPE]
   | Advanced: Service Account   | App Engine Default service account                                                                            |
   | Environment Variables       | [*see below*](#environment-variables)                                                                        |
 
-3. Press `Next`. On the `Source` page, you'll need to copy the source code files. I recommend just using the file editor. Delete all the default files, and create the following, copying the contents.
+3. Press `Next`. On the `Source` page, you'll need to copy the source code files. I recommend just using the file editor. Delete all the default files, and create the following, copying the contents. Your tree should look like:
+```bash
+C:.
+│   cloud-functions.js
+│   package.json
+└───commands
+        servers.js
+```
+
   - package.json (edit the `main` property to be `cloud-functions.js`)
   - cloud-functions.js
   - commands/servers.js

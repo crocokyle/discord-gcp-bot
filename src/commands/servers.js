@@ -75,7 +75,7 @@ module.exports = class ServersCommand extends SlashCommand {
     var subcommand = ctx.subcommands[0];
 
     if (subcommand == "list" && (ctx.member.roles.includes(USER_ROLE_ID) || ctx.member.roles.includes(MANAGER_ROLE_ID))) {
-      await ctx.acknowledge(true);
+      await ctx.defer();
       var table = [];
       compute.getVMs((err, vms) => {
         if (err) {
@@ -102,7 +102,7 @@ module.exports = class ServersCommand extends SlashCommand {
     }
 
     else if ((subcommand == "start" || subcommand == "stop") && (ctx.member.roles.includes(USER_ROLE_ID) || ctx.member.roles.includes(MANAGER_ROLE_ID))) {
-      await ctx.acknowledge(true);
+      await ctx.defer();
       const zoneName = (ctx.options[subcommand].zone == undefined)? DEFAULT_COMPUTE_ZONE : ctx.options[subcommand].zone;
       const zone = compute.zone(zoneName);
       const vm = zone.vm(ctx.options[subcommand].name);
